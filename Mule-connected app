@@ -1,1 +1,30 @@
+Connected-apps-
+The Connected Apps feature provides a framework that enables an 
+external application to integrate with Anypoint Platform using APIs through OAuth 2.0 and OpenID Connect.
+Connected apps help users delegate their access without sharing sensitive credentials or giving 
 
+Anypoint platform:-
+
+  Access management-connected apps
+  
+
+Keep these ideas in mind when creating Connected Apps or managing authorizations:
+
+An organization can own up to 200 Connected Apps.
+Organization administrators can view all authorized applications within their organizations. 
+Only organization administrators can disable or whitelist specific Connected Apps for their organization. 
+Use client grant type for applications made for your team or company to ensure that as an app owner leaves the company, the application will continue to work without interruptions. 
+Once an application is created, it’s assigned a clientID, which can’t be changed. Similar to user passwords, client secrets can be modified under the application settings page. 
+Application actions are logged in Audit Log
+
+
+Connected Apps can be classified as either first-party or third-party, which refers to the ownership of the application. The main difference relates to who has administrative access to the Anypoint Platform domain. Let’s review the use cases in more detail:
+
+First-party applications are designed and controlled by the same organization or person that owns the domain. 
+This includes server-to-server applications that simplify your existing workflows, e.g.
+CI/CD pipeline accessing Anypoint Platform programmatically without a need for a service user.
+Third-party applications are controlled by different people or organizations that generally don’t have administrative access
+to your organization domain. They enable third-parties, such as MuleSoft partners and community developers,
+to access protected resources of your organization in a secure way. 
+They include Single Sign-On or mobile applications that provide cohesive user experience for authentication, e.g. 
+Advance REST Client or APIMatic tools that personalize the user’s experience based on the Anypoint Platform data.
